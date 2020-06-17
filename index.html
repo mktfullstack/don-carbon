@@ -124,7 +124,7 @@
                  
                         <div class="about-peragraph">
 
-                            <img alt="" src="assets/img/product/logo.png">
+                           
                            
                             <h3> Tenemos más de 2 años de experiencia ofreciendo comida de gran calidad al mejor precio. </h3>
                             
@@ -146,6 +146,7 @@
         
         
         <div class="popular-product gray-bg pt-100 pb-100" id="menu">
+
             <div class="container">
                 <div class="section-title text-center mb-50">
                     <h2>Calidad, sabor y precio</h2>
@@ -229,6 +230,7 @@
           <div class="book-table ptb-100 bg-img" id="book" style="background-image:url(assets/img/banner/book-a-table.jpg);">
            <div class="container">
                 <div class="section-title text-center mb-50">
+                   
                     <h2>Conoce nuestro menú</h2>
 			   </div>
          </div>
@@ -354,7 +356,7 @@
             </div>
         </div>
         
-        
+        <div class="slider-video-area height-100vh youtube-bg d-flex align-items-center bg-img" style="background-image: url(assets/img/slider/video.jpg);" data-property="{videoURL:'tYjiGCQj9c4',opacity:1,showControls:false,autoPlay:true,}"></div>
       
        
         <footer class="footer-area">
@@ -371,13 +373,62 @@
         
 		
 		<!-- all js here -->
+       
+       
         <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/ajax-mail.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+           <!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+5217714221907", // WhatsApp number
+            call_to_action: "Contáctanos", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
         
+        
+        <script>
+  var div = document.createElement('div');
+  div.className = 'fb-customerchat';
+  div.setAttribute('page_id', '100239891744098');
+  div.setAttribute('ref', '');
+  document.body.appendChild(div);
+  window.fbMessengerPlugins = window.fbMessengerPlugins || {
+    init: function () {
+      FB.init({
+        appId            : '1678638095724206',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.3'
+      });
+    }, callable: []
+  };
+  window.fbAsyncInit = window.fbAsyncInit || function () {
+    window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+    window.fbMessengerPlugins.init();
+  };
+  setTimeout(function () {
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  }, 0);
+</script>
         
     </body>
 
